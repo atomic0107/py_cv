@@ -10,7 +10,7 @@ s.bind(("127.0.0.1", 10002))    # サーバー側PCのipと使用するポート
 print("接続待機中")  
 s.listen(1)                     # 接続要求を待機
 soc, addr = s.accept()          # 要求が来るまでブロック
-print(str(addr)+"と接続完了")  
+print(str(addr)+"と接続完了")
 #cam = cv2.VideoCapture(0)#カメラオブジェクト作成
 cam = cv2.VideoCapture(1)#カメラオブジェクト作成
 #raspberry pi
